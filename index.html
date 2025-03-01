@@ -25,7 +25,7 @@
     <div class="pt-5">
     <div class="max-w-7xl mx-12 shadow rounded-md">
         <div class=" px-4 py-4 flex justify-between items-center">
-            <div class="flex items-center gap-3">
+            <div class="flex items-center gap-3 cursor-pointer">
                 <img src="./assets/logo.png" alt="Logo" class="h-8 w-8">
                 <h1 class="text-2xl font-bold">Dev<span class="text-blue-500">Board</span></h1>
             </div>
@@ -45,19 +45,19 @@
     <div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-6 mt-2 p-4">
         <!-- Dashboard Container -->
         <div class="w-full md:w-3/4">
-            <div class="flex justify-between items-center bg-white p-4 rounded-lg shadow-md">
+            <div class="flex justify-between items-center bg-white p-4 rounded-lg shadow ">
                 <div class="bg-[#F4F7FF] flex items-center gap-2 p-3 rounded-lg">
                     <div class="bg-white rounded-full p-3">
                         <img src="./assets/checkbox.png" alt="checkbox">
                     </div>
                     <div class="text-left">
                         <p class="text-gray-600 text-sm">Task Assigned</p>
-                        <p class="text-xl font-bold">05</p>
+                        <p id="task-assigned-count" class="text-xl font-bold">06</p>
                     </div>
                 </div>
 
-                <div
-                    class="bg-gradient-to-r from-blue-500 to-indigo-500 text-white p-4 flex items-center gap-3 rounded-lg w-2/5">
+                <div id="blog-page"
+                    class="bg-gradient-to-r from-blue-500 to-indigo-500 text-white p-4 flex items-center gap-3 rounded-lg w-2/5 cursor-pointer">
                     <img src="./assets/board.png" class="w-14 h-14" alt="icon">
                     <p class="text-lg">Discover Something <br> New Today!</p>
                 </div>
@@ -74,6 +74,7 @@
                     </div>
                 </div>
             </div>
+            <hr class="my-5 border-2 border-dashed">
             <!-- card section develop -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-5">
                 <div class=" p-4 shadow rounded-lg bg-[#F4F7FF]">
@@ -139,18 +140,33 @@
                     <img src="./assets/activity.png" alt="">
                     <h3 class="font-semibold text-xl">Activity Log</h3>
                 </div>
-                <button class=" my-2 bg-[#3752FD] py-2 px-5 rounded-md text-white text-sm">Clear History</button>
+                <button class=" my-2 mt-4 bg-[#3752FD] py-2 px-5 rounded-md text-white text-sm">Clear History</button>
             </div>
+            <hr class="border-2 border-dashed my-5">
             <div class="space-y-2 text-sm text-gray-600">
                 <div class="p-2 bg-gray-100 rounded-lg">
-                    <p>You completed <span class="font-semibold">Add Dark Mode</span> at 12:48 PM</p>
+                    <p>You completed <span class="font-semibold">Fix Mobile Button Issue</span> at 12:48 PM</p>
                 </div>
                 <div class="p-2 bg-gray-100 rounded-lg">
                     <p>You completed <span class="font-semibold">Fix Mobile Button Issue</span> at 11:30 AM</p>
+                </div>
+                <div class="p-2 bg-gray-100 rounded-lg">
+                    <p>You completed <span class="font-semibold">Optimize Home page</span> at 11:30 AM</p>
+                </div>
+                <div class="p-2 bg-gray-100 rounded-lg">
+                    <p>You completed <span class="font-semibold">Add new emoji 🤲</span> at 11:30 AM</p>
+                </div>
+                <div class="p-2 bg-gray-100 rounded-lg">
+                    <p>You completed <span class="font-semibold">Integrate OpenAI API</span> at 11:30 AM</p>
+                </div>
+                <div class="p-2 bg-gray-100 rounded-lg">
+                    <p>You completed <span class="font-semibold">Improve Job searching</span> at 11:30 AM</p>
                 </div>
             </div>
         </div>
     </div>
 
+    <script src="./script/blog.js"></script>
+    
 </body>
 </html>
