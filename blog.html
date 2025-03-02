@@ -39,25 +39,28 @@
     <center class="p-2"><h1 class="text-4xl font-bold my-5">Blogs</h1></center>
     <!-- blog content secction -->
      <div class="max-w-7xl mx-12 p-5 mb-5 shadow bg-white rounded-md">
-        <h1 class="text-xl font-bold border-b-2 pb-2 border-dashed">Question-1: What are the different ways to select an element in the DOM?</h1>
+        <h1 class="text-xl font-bold border-b-2 pb-2 border-dashed">What are the different ways to select an element in the DOM?</h1>
         
-        <p class="pt-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur aliquid sunt deleniti fuga delectus, debitis accusamus facere pariatur inventore laboriosam culpa enim, facilis magni ipsa velit in ullam veritatis? Fugiat magnam, non velit illum rem, aspernatur nobis repellat ullam vitae ipsa minima fuga explicabo vel totam veritatis ab repudiandae eaque?</p>
+        <p class="pt-2">There are several ways to select elements from the page. The easiest and fastest way is getElementById(), which finds an element using its unique id. If you need to select multiple elements that have the same class name, you can use getElementsByClassName(), which returns a list of all elements with that class. Similarly, getElementsByTagName() selects all elements of a certain type, like all
+        p tags or all div tags.A more flexible way is querySelector(), which allows you to use CSS-style selectors to find elements. For example, document.querySelector(".button") finds the first element with the class button, while querySelectorAll(".button")selects all elements with that class.</p>
      </div>
      <div class="max-w-7xl mx-12 p-5 mb-5 shadow bg-white rounded-md">
-        <h1 class="text-xl font-bold border-b-2 pb-2 border-dashed">Question-1: What are the different ways to select an element in the DOM?</h1>
-        <p class="pt-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur aliquid sunt deleniti fuga delectus, debitis accusamus facere pariatur inventore laboriosam culpa enim, facilis magni ipsa velit in ullam veritatis? Fugiat magnam, non velit illum rem, aspernatur nobis repellat ullam vitae ipsa minima fuga explicabo vel totam veritatis ab repudiandae eaque?</p>
+        <h1 class="text-xl font-bold border-b-2 pb-2 border-dashed">What is the difference between innerHTML, innerText, and textContent ?</h1>
+        <p class="pt-2">When working with text inside an element on a webpage, you can use innerHTML, innerText, or textContent, but they work differently. innerHTML gets or sets everything inside an element, including HTML tags. innerText gets or sets only the visible text inside an element. If an element has display: none, innerText will not show that text. textContent is similar to innerText, but it keeps all text, including
+        hidden text. Unlike innerHTML, it treats everything as plain text that's why use innerHTML if you need to work with HTML tags, use innerText for visible text, and use textContent to get all text.</p>
      </div>
      <div class="max-w-7xl mx-12 p-5 mb-5 shadow bg-white rounded-md">
-        <h1 class="text-xl font-bold border-b-2 pb-2 border-dashed">Question-1: What are the different ways to select an element in the DOM?</h1>
-        <p class="pt-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur aliquid sunt deleniti fuga delectus, debitis accusamus facere pariatur inventore laboriosam culpa enim, facilis magni ipsa velit in ullam veritatis? Fugiat magnam, non velit illum rem, aspernatur nobis repellat ullam vitae ipsa minima fuga explicabo vel totam veritatis ab repudiandae eaque?</p>
+        <h1 class="text-xl font-bold border-b-2 pb-2 border-dashed">What is event delegation in the DOM?</h1>
+        <p class="pt-2">Event delegation is a smart way to handle events in JavaScript, especially when working with many elements. Event delegation makes your code faster, cleaner, and more efficient, especially when new elements are added dynamically. Event
+        delegation helps reduce the number of event listeners, saving memory and improving performance on your website.</p>
      </div>
      <div class="max-w-7xl mx-12 p-5 mb-5 shadow bg-white rounded-md">
-        <h1 class="text-xl font-bold border-b-2 pb-2 border-dashed">Question-1: What are the different ways to select an element in the DOM?</h1>
-        <p class="pt-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur aliquid sunt deleniti fuga delectus, debitis accusamus facere pariatur inventore laboriosam culpa enim, facilis magni ipsa velit in ullam veritatis? Fugiat magnam, non velit illum rem, aspernatur nobis repellat ullam vitae ipsa minima fuga explicabo vel totam veritatis ab repudiandae eaque?</p>
+        <h1 class="text-xl font-bold border-b-2 pb-2 border-dashed">What is event bubbling in the DOM?</h1>
+        <p class="pt-2">Event bubbling is how an event moves from the bottom to the top in the webpage. When you click on a small element inside a bigger element, the event starts from the clicked element and then moves up to its parent, then to the grandparent, and so on until it reaches the top html element. Sometimes, bubbling can cause problems if events fire where you don’t want them to, so you can stop bubbling using</p>
      </div>
      <div class="max-w-7xl mx-12 p-5 mb-5 shadow bg-white rounded-md">
-        <h1 class="text-xl font-bold border-b-2 pb-2 border-dashed">Question-1: What are the different ways to select an element in the DOM?</h1>
-        <p class="pt-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur aliquid sunt deleniti fuga delectus, debitis accusamus facere pariatur inventore laboriosam culpa enim, facilis magni ipsa velit in ullam veritatis? Fugiat magnam, non velit illum rem, aspernatur nobis repellat ullam vitae ipsa minima fuga explicabo vel totam veritatis ab repudiandae eaque?</p>
+        <h1 class="text-xl font-bold border-b-2 pb-2 border-dashed">How do you create, add, and remove elements using JavaScript?</h1>
+        <p class="pt-2">In JavaScript, I can create, add, and remove elements to change a webpage. To create an element, I use document.createElement("tagName"). For example, document.createElement("p") makes a new p tag.Then I can do this using appendChild() to add it at the end of a parent element or prepend() to add it at the beginning. For example, parent.appendChild(newElement) puts the new element inside the parent. If I want to remove an element, I use remove() or removeChild(). For example, element.remove() deletes an element directly, or parent.removeChild(childElement) removes a child from its parent.</p>
      </div>
 
      <script src="home.js"></script>
