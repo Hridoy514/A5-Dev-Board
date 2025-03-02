@@ -27,7 +27,7 @@ document.getElementById("clearHistory").addEventListener("click", function () {
 function completeTask(buttonId, issueId) {
     document.getElementById(buttonId).addEventListener("click", function (event) {
         event.preventDefault();
-        alert("✅ Task Completed Successfully!");
+        alert("Board updated Successfully!");
 
         let navTaskCount = document.getElementById("nav-task-count");
         let assignedTaskCount = document.getElementById("task-assigned-count");
@@ -41,7 +41,10 @@ function completeTask(buttonId, issueId) {
         button.classList.add("opacity-50", "cursor-not-allowed");
         button.disabled = true;
         document.getElementById(issueId).style.display = "block";
-    })
+        if (parseInt(assignedTaskCount.innerText) === 0) {
+            alert("Congrats!!! You have completed all current task");
+        }
+    });
 }
 completeTask("completeMobileIssue", "mobileIssue");
 completeTask("darkIssueButton", "darkIssue");
